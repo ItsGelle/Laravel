@@ -23,6 +23,13 @@ Route::get('/historie', function() {
     return view('historie');
 });
 
+Route::get('/spelers', function() {
+    return view('spelers');
+});
+
+Route::get('/agenda', function() {
+    return view('agenda');
+});
 
 Route::get('/artikel/{nummer}', 'ArticleController@show')
 ->where('nummer', '\d+')
