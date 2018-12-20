@@ -28,7 +28,6 @@
 @section('content')
 
     <div style="font-size: 20px; background: none" class="agenda">
-        <h1>Historie</h1>
         <p>
             24-11-18 <br>
             15:30 <br>

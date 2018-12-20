@@ -27,12 +27,12 @@
 
 @section('content')
 
-    <h1>Contact</h1>
-
-    <p>Om ons te contacteren kan je een mail sturen naar: <br>
-       infoBayern@hotmail.com. <br>
-       Of bel ons naar: <br>
-       06 12345678!
-    </p>
+    <form style="text-align: center;" action="">
+        <label><input type="text" id="Voornaam" placeholder="Voornaam"></label><br>
+        <label><input type="text" id="Achternaam" placeholder="Achternaam"></label><br>
+        <label><input type="password" id="Password" placeholder="Password"></label><br>
+        <label><input type="email" id="Email" placeholder="email"></label><br>
+        <label><button type="submit" id="Submit">Submit</button></label>
+    </form>
 
 @stop

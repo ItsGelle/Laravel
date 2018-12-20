@@ -31,15 +31,17 @@ Route::get('/agenda', function() {
     return view('agenda');
 });
 
+ROute::get('/handleForm-registration', 'RegistrationController@handleForm');
+
 Route::get('/artikel/{nummer}', 'ArticleController@show')
 ->where('nummer', '\d+')
   ->name('artikel.show')
 ;
 
+Route::get('/photo-gallery','PhotoGalleryController@listPhotos')->name('gallery.index');
+Route::get('/photo-gallery/add-photo','PhotoGalleryController@showPhotoForm')->name('gallery.add_photo');
+Route::post('/photo-gallery/add-photo','PhotoGalleryController@savePhotoForm')->name('gallery.save_photo');
 
-Route::get('/artikel/{naam}', function($naam) {
-    return 'Hier is artikel ' . $naam . '!';
-})->where('naam', '[a-zA-Z\-]+')
-  ->name('artikel.show_name')
-;
+
+
 
